@@ -288,6 +288,7 @@ footer .social a {
 	
 	.product-card, .product-card1 {
 		flex: 1 46%;
+		flex-direction: column;
 	}
 
 }
@@ -300,5 +301,4 @@ footer .social a {
 		background-color: red;
 	}	
 
-	
 }
