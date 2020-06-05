@@ -184,7 +184,7 @@
 	/* [disabled]padding-left: 19px;
 */
 	padding-bottom: 30px;
-	height: 100%;
+	
 }
 .left_half {
 	background-color: #52BAD5;
@@ -433,6 +433,10 @@ body {
 }
 .thumbnail_align {
 	text-align: center;
+}
+.thumbnail_align:hover {
+	cursor: pointer;
+	opacity: 0.5;
 }
 .social {
 	text-align: center;
