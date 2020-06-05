@@ -1,0 +1,52 @@
+		@charset "utf-8";
+
+		/* CSS Document */
+		.rojo {
+		  color: #900;
+		}
+
+		.azul {
+		  color: #03F;
+		}
+
+		.rosa {
+		  color: #F0F;
+		}
+
+		.verde {
+		  color: #390;
+		}
+
+		.naranja {
+		  color: #C60;
+		}
+
+		.code {
+		  background-color: #F8F8F8;
+		  padding: 10px;
+		  border: 1px solid #666;
+		  float: left;
+		  font-family: "Courier New", Courier, monospace;
+		  width: 90%;
+		  margin-bottom: 10px;
+		}
+
+		.code p {
+		  margin: 0px;
+		  padding: 0px;
+		}
+
+		.code blockquote {
+		  margin: 0px;
+		  padding-top: 0px;
+		  padding-right: 0px;
+		  padding-bottom: 0px;
+		  padding-left: 40px;
+		}
+
+		.minicode {
+		  font-family: "Courier New", Courier, monospace;
+		  padding-left: 2em;
+		  font-size: 1.1em;
+		  line-height: 1.3em;
+		}

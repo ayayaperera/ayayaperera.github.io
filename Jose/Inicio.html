@@ -1,0 +1,229 @@
+	<!DOCTYPE HTML>
+
+	<html>
+
+	<head>
+		<title>Inicio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript>
+			<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<script>
+			function validacion() {
+				/* funcion que realiza la validación del formulario de contacto*/
+
+				nombre = document.getElementById("nombre").value; /*nombre*/
+				email = document.getElementById("email").value; /* email*/
+				expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; /* pattern email*/
+				asunto = document.getElementById("asunto").value; /*asunto*/
+				telefono = document.getElementById("telefono").value; /*telefono*/
+
+				if (nombre == null || nombre.length == 0) {
+					/* si no se ha introducido nada*/
+					alert('[ERROR] Debes poner un nombre');
+					return true;
+				} else if (!expr.test(email)) {
+					/* si el correo introducido no cumple con el patron valido establecido */
+					alert("Error: La dirección de correo " + email + " es incorrecta.");
+					return false;
+				} else if (asunto == null || asunto.length == 0) {
+					/*si el no se ha introducido el asunto */
+					alert('[ERROR] Debes escribir el motivo de tu consulta');
+					return false;
+				} else if (!(/^\d{3}-\d{3}-\d{3}$/.test(telefono))) {
+					/* si el telefono introducido no cumple con el patrón xxx-xxx-xxx */
+					alert('[ERROR] Debes escribir un formato correcto de telefono');
+					return false;
+				}
+				/* si no ha ocurrido ningún error en la validación se genera un mensaje de confirmación */
+				else {
+					alert("Consulta Enviada. Pronto recibirá una respuesta por correo");
+					return true;
+				}
+			}
+		</script>
+		<style>
+			input:valid,
+			textarea:valid {
+				background: rgba(#ffffff);
+			}
+
+			input:invalid,
+			textarea:invalid {
+				background: rgba(#ffffff);
+		</style>
+
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided">
+
+			<!-- One -->
+			<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+				<div class="content">
+					<h1>
+						<img src="img/logo easd.png" alt="" />
+					</h1>
+					<p class="major"><strong>Oferta Educativa</strong><br>Escuela de Arte y Superior de Diseño Gran Canaria</p>
+					<ul class="actions stacked">
+						<li><a href="#first" class><img src="img/flecha-abajo.png"></a></li>
+					</ul>
+				</div>
+				<div class="image">
+					<img src="img/banner.jpg" alt="" />
+				</div>
+			</section>
+
+			<!-- Two -->
+			<section class="wrapper style1 align-center" id="first">
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<span class><a href="html/bachillerato.html"><img src="img/icon.png"></a></span>
+						<p><strong>Bachillerato de Artes.<br>Itinerario de Artes Plásticas,<br>Imagen y Diseño</strong></p>
+					</section>
+					<section>
+						<span class><a href="html/grado medio.html"><img src="img/icon.png"></a></span>
+						<p><strong>Ciclos Formativos de<br>Grado Medio</strong></p>
+					</section>
+					<section>
+						<span class><a href="html/grado superior.html"><img src="img/icon.png"></a></span>
+						<p><strong>Ciclos Formativos de<br>Grado Superior</strong></p>
+					</section>
+					<section>
+						<section>
+							<span class><a href="html/enseñanzas superiores.html"><img src="img/icon.png"></a></span>
+							<p><strong>Enseñanzas Artísticas<br>Superiores de Diseño</strong></p>
+						</section>
+						<section>
+				</div>
+		</div>
+		</section>
+
+		<!-- Three -->
+		<div class="gallery style2 medium lightbox onscroll-fade-in">
+			<article>
+				<a href="img/gallery/fulls/01.jpg" class="image">
+					<img src="img/gallery/thumbs/01.jpg" alt="" />
+				</a>
+			</article>
+			<article>
+				<a href="img/gallery/fulls/02.jpg" class="image">
+					<img src="img/gallery/thumbs/02.jpg" alt="" />
+				</a>
+			</article>
+			<article>
+				<a href="img/gallery/fulls/03.jpg" class="image">
+					<img src="img/gallery/thumbs/03.jpg" alt="" />
+				</a>
+			</article>
+			<article>
+				<a href="img/gallery/fulls/04.jpg" class="image">
+					<img src="img/gallery/thumbs/04.jpg" alt="" />
+				</a>
+			</article>
+			<article>
+				<a href="img/gallery/fulls/05.jpg" class="image">
+					<img src="img/gallery/thumbs/05.jpg" alt="" />
+				</a>
+			</article>
+		</div>
+		</section>
+
+
+
+		<!-- Four -->
+		<section class="wrapper style1 align-center">
+			<div class="inner">
+				<h2>La Escuela</h2>
+				<p>Las Escuelas de Arte cuentan con una importante tradición en la enseñanza de<br>
+					las Artes Plásticas y el Diseño. Con su actividad docente han contribuido<br>
+					a la formación de numerosos profesionales, así como al desarrollo<br>
+					de un entorno favorable a las actividades artísticas y al enriquecimiento de la<br>
+					sensibilidad social y la identidad cultural.</p>
+			</div>
+
+
+			<!-- Five -->
+			<div id="video"><video src="video/motion graphics.mp4" width="100%" height="400" controls></video>
+
+
+			</div>
+
+
+			<!-- Six -->
+			<section class="wrapper style1 align-center">
+				<div class="inner medium">
+					<h1>Ponerse en contacto</h1>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Nombre</label>
+								<input type="text" name="name" id="name" value="" />
+							</div>
+							<div class="field half">
+								<label for="email">Correo electrónico</label>
+								<input type="email" name="email" id="email" value="" />
+							</div>
+							<div class="field half">
+								<label for="email">Teléfono</label>
+								<input type="email" name="email" id="email" value="" />
+							</div>
+							<div class="field half">
+								<label for="name">Asunto</label>
+								<input type="text" name="name" id="name" value="" />
+							</div>
+							<div class="field">
+								<label for="message">Mensaje</label>
+								<textarea name="message" id="message" rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions special">
+							<li><input type="submit" name="submit" id="submit" value="Enviar" /></li>
+						</ul>
+					</form>
+
+				</div>
+			</section>
+
+			<!-- Seven -->
+			<footer class="wrapper style1 align-center">
+
+				<div id="divizquierdo"><strong>Contacto</strong><br>
+					Avenida de Canarias nº44, Las Palmas de Gran Canaria, 35016<br>
+					35003034@gobiernodecanarias.org<br>
+					Tlf: 928312779/Fax: 928323014
+				</div>
+
+				<div id="divderecho"><strong>¡ Siguenos en las redes !</strong>
+					<div id="divyou"><a href="https://www.youtube.com/channel/UCYT_urCWL5KVfrp1mU6tgiA"><img src="img/youtube.png"></a></div>
+					<div id="divinsta"><a href="https://www.instagram.com/easdgc/?hl=es"><img src="img/instagram.png"></a></div>
+				</div>
+
+			</footer>
+
+
+
+
+
+
+
+
+
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+	</html>
