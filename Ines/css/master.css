@@ -1,0 +1,100 @@
+
+.zoom {
+  /* Aumentamos la anchura y altura durante 2 segundos */
+  transition: width 2s, height 2s, transform 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -o-transition: width 2s, height 2s, -o-transform 2s;
+}
+
+.zoom:hover {
+  /* tranformamos el elemento al pasar el mouse por encima al doble de su tamaño con scale(2) */
+  transform: scale(1.10);
+  -moz-transform: scale(1.10);
+  /* Firefox */
+  -webkit-transform: scale(1.10);
+  /* Chrome - Safari */
+  -o-transform: scale(1.10);
+  /* Opera */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 250px;
+  align-content: center;
+  margin-left: 75px;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  background: #ccc;
+  font-size: 11px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 70%;
+  text-align: center;
+  display: block;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 ;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+.boton {
+  width: auto;
+  align-self: center;
+  margin: inherit;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .09em;
+  border-radius: 5px;
+}
+
+section form input[type="submit"]:hover {
+  cursor: pointer;
+}
