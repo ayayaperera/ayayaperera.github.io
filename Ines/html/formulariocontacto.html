@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <title>CFGS | Oferta Educativa</title>
+  <title>BCH | Oferta Educativa</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/master.css">
@@ -53,10 +53,10 @@
       <i class="fa fa-remove"></i>
     </a>
     <h4 class="w3-bar-item"><b>Oferta Educativa</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="_bachillerato.html">Bacillerato de Artes</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="_ciclomedio.html">Ciclos Formativos de Grado Medio</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="_ciclosuperior.html">Ciclos Formativos de Grado Superior</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="_ensenanzasartisticas.html">Enseñanzas Artísticas Superiores de Diseño</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="bachillerato.html">Bacillerato de Artes</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="ciclomedio.html">Ciclos Formativos de Grado Medio</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="ciclosuperior.html">Ciclos Formativos de Grado Superior</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="ensenanzasartisticas.html">Enseñanzas Artísticas Superiores de Diseño</a>
     <a class="w3-bar-item w3-button w3-hover-black zoom" href="http://www.eagrancanaria.org/site/index.php?option=com_content&view=category&id=193:2020-03-08-21-17-15&Itemid=66&layout=default">ADMISIÓN Y PRUEBAS DE ACCESO</a>
   </nav>
 
@@ -65,52 +65,39 @@
 
   <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
   <div class="w3-main" style="margin-left:250px">
-
-    <div class="w3-row w3-padding-64">
-      <div class="w3-third w3-container">
-        <p class="w4-border w3-padding-large w3-padding-32 w3-center">
-          <img src="../img/CFGS_1.webp" alt="" width="200px">
-        </p>
-      </div>
+    <div class="w3-row w3-padding-32">
       <div class="w3-twothird w3-container">
-        <h1 class="w3-text-teal">Ciclos Formativos de Grado Superior</h1>
+        <h1 class="w3-text-teal">¡Resuelve tus dudas aquí!</h1>
         <h3 class="w3-text-teal"></h3>
-        <p>Los Ciclos Formativos de Grado Superior tienen una duración de 2 años académicos. El título de Técnico Superior de Artes Plásticas y Diseño que se obtiene permite el acceso a los cuerpos y escalas del Grupo B de la Administración Pública,
-          así como acceso directo a las Enseñanzas Artísticas Superiores de Diseño, de Artes Plásticas y de Conservación y Restauración de Bienes Culturales, y acceso a las enseñanzas universitarias oficiales de grado.
-        </p>
+        <form action="javascript:;" onsubmit="return validacion()">
+          <p>
+            Nombre: <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" style="width: 500px" />
+          </p>
+          <p>
+            Correo electrónico: <br>
+            <input type="email" name="email" id="email" placeholder="xxx@gmail.com" title="Recuerda el formato válido: xxx@gmail.com" style="width: 500px" />
+          </p>
+          <p>
+            Teléfono: <br>
+            <input type="text" name="telefono" id="telefono" placeholder="introduce tu telefono, recuerda el formato válido:xxx-xxx-xxx" style="width: 500px" required />
+          </p>
+          <p>
+            Asunto: <br>
+            <input type="text" name="asunto" id="asunto" placeholder="Escribe tu mensaje" style="width: 500px" required />
+          </p>
+          <p>
+            Mensaje: <br>
+            <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300" style="width: 500px" required></textarea>
+          </p>
+          <input class="w3-border w3-button w3-hover-black w3-center" type="submit" name="enviar" value="ENVIAR" />
+        </form>
       </div>
-      <div class="w3-twothird w3-container w3-border">
-        <h3 class="w3-text-teal">Artes Aplicadas a la Indumentaria</h3>
-        <p>
-          <a href="CS_ModelismoIndumentaria.html" class="w3-button w3-black">Modelismo de Indumentaria</a>
-        </p>
-        <br>
-        <h3 class="w3-text-teal">Cerámica Artística</h3>
-        <p>
-          <a href="CS_CeramicaArtisitica.html" class="w3-button w3-black">Cerámica Artística</a>
-        </p>
-        <br>
-        <h3 class="w3-text-teal">Diseño de Interiores</h3>
-        <p>
-          <a href="CS_ArquitecturaEfimera.html" class="w3-button w3-black">Arquitectura Efímera</a>
-          <a href="CS_ProyectosDireccionObrasDecoracion.html" class="w3-button w3-black">Proyectos y Dirección de Obras de Decoración</a>
-        </p>
-        <br>
-        <h3 class="w3-text-teal">Escultura</h3>
-        <p>
-          <a href="CS_TecnicasEscultoricas.html" class="w3-button w3-black">Técnicas Escultóricas</a>
-          <a href="CS_EsculturaAplicadaEspectáculo.html" class="w3-button w3-black">Escultura Aplicada al Espectáculo</a>
-        </p>
-        <br>
-        <h3 class="w3-text-teal">Comunicación Gráfica y Audiovisual</h3>
-        <p>
-          <a href="CS_Animacion.html" class="w3-button w3-black">Animación</a>
-          <a href="CS_Comic.html" class="w3-button w3-black">Cómic</a>
-          <a href="CS_Fotografia.html" class="w3-button w3-black">Fotografía</a>
-          <a href="CS_Ilustracion.html" class="w3-button w3-black">Ilustración</a>
-          <br><br>
-          <a href="CS_GraficaPublicitaria.html" class="w3-button w3-black">Gráfica Publicitaria</a>
-          <a href="CS_GraficaInteractiva.html" class="w3-button w3-black">Gráfica Interactiva</a>
+      <div class="w3-third w3-container">
+        <p class=" w3-padding-large w3-padding-64 w3-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.3005543557997!2d-15.41815928492985!3d28.076373682640522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4095fcf73cf3cb%3A0x10133723acf34f03!2sEscuela%20de%20Arte%20y%20Superior%20de%20Dise%C3%B1o%20Gran%20Canaria!5e0!3m2!1ses!2ses!4v1591113621923!5m2!1ses!2ses"
+            width="300px" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </p>
       </div>
     </div>
@@ -158,6 +145,40 @@
     function w3_close() {
       mySidebar.style.display = "none";
       overlayBg.style.display = "none";
+    }
+
+    // formulario
+    function validacion() {
+      /* funcion que realiza la validación del formulario de contacto*/
+
+      nombre = document.getElementById("nombre").value; /*nombre*/
+      email = document.getElementById("email").value; /* email*/
+      expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; /* pattern email*/
+      asunto = document.getElementById("asunto").value; /*asunto*/
+      telefono = document.getElementById("telefono").value; /*telefono*/
+
+      if (nombre == null || nombre.length == 0) {
+        /* si no se ha introducido nada*/
+        alert('[ERROR] Debes poner un nombre');
+        return true;
+      } else if (!expr.test(email)) {
+        /* si el correo introducido no cumple con el patron valido establecido */
+        alert("Error: La dirección de correo " + email + " es incorrecta.");
+        return false;
+      } else if (asunto == null || asunto.length == 0) {
+        /*si el no se ha introducido el asunto */
+        alert('[ERROR] Debes escribir el motivo de tu consulta');
+        return false;
+      } else if (!(/^\d{3}-\d{3}-\d{3}$/.test(telefono))) {
+        /* si el telefono introducido no cumple con el patrón xxx-xxx-xxx */
+        alert('[ERROR] Debes escribir un formato correcto de telefono');
+        return false;
+      }
+      /* si no ha ocurrido ningún error en la validación se genera un mensaje de confirmación */
+      else {
+        alert("Consulta Enviada. Pronto recibirá una respuesta por correo");
+        return true;
+      }
     }
   </script>
 
